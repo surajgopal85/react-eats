@@ -1,15 +1,18 @@
-// import logo from './logo.svg';
+import React, { Fragment } from 'react';
 import './App.css';
+
+// components
+import Header from './components/Layout/Header';
+import Meals from './components/Meals/Meals';
 
 const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h2>
-          Let's get started!
-        </h2>
-      </header>
-    </div>
+    <Fragment>
+      <Header />
+      <main>
+        <Meals />
+      </main>
+    </Fragment>
   );
 }
 
